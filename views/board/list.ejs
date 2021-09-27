@@ -1,0 +1,41 @@
+<%- include('../inc/head.ejs') %> 
+<%- include('../inc/header.ejs') %> 
+<section class="list-wrapper wrapper">
+	<%- include('../inc/title-bar.ejs') %> 
+	<table class="table table-hover table-primary table-striped text-center">
+		<thead>
+			<tr>
+				<th><%= FIELD.NO %></th>
+				<th><%= FIELD.TITLE %></th>
+				<th><%= FIELD.WRITER %></th>
+				<th><%= FIELD.DATE %></th>
+				<th><%= FIELD.VIEWCOUNT %></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>5</td>
+				<td class="text-left"><a href="./view.html">테스트 게시글 입니다.</a></td>
+				<td>테스터</td>
+				<td>2021-09-15</td>
+				<td>21</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td class="text-left"><a href="./view.html">테스트 게시글 입니다.</a></td>
+				<td>테스터</td>
+				<td>2021-09-15</td>
+				<td>21</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td class="text-left"><a href="./view.html">테스트 게시글 입니다.</a></td>
+				<td>테스터</td>
+				<td>2021-09-15</td>
+				<td>21</td>
+			</tr>
+		</tbody>
+	</table>
+	<%- include('../inc/pager.ejs') %> 
+</section>
+<%- include('../inc/foot.ejs') %> 

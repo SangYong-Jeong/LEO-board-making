@@ -1,0 +1,42 @@
+<%- include('../inc/head.ejs') %> 
+<%- include('../inc/header.ejs') %> 
+<section class="view-wrapper wrapper">
+	<%- include('../inc/title-bar.ejs') %> 
+	<table class="view-tbl">
+		<tbody>
+			<tr>
+				<td class="title"><%= FIELD.TITLE %></td>
+				<td class="content">테스트 글 입니다.</td>
+			</tr>
+			<tr>
+				<td class="title"><%= FIELD.WRITER %></td>
+				<td class="content">테스터</td>
+			</tr>
+			<tr>
+				<td class="title"><%= FIELD.DATE %></td>
+				<td class="content">2021-09-15 13:18:22</td>
+			</tr>
+			<tr>
+				<td class="title"><%= FIELD.VIEWCOUNT %></td>
+				<td class="content">21</td>
+			</tr>
+			<tr class="content-tr">
+				<td class="title"><%= FIELD.CONTENT %></td>
+				<td class="content">테스트 글 내용입니다.</td>
+			</tr>
+			<tr>
+				<td class="title"><%= FIELD.UPFILE %></td>
+				<td class="content">
+					<img src="https://via.placeholder.com/120x160" alt="<%= FIELD.UPFILE %>" class="file-img">
+					<a href="#" class="my-2 d-block">첨부파일.jpg</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="btn-wrap py-3 d-flex">
+		<a href="./list.html" class="btn btn-primary"><%= BT.LIST %></a>
+		<a href="./update.html" class="btn btn-success ml-auto mr-1"><%= BT.UPDATE %></a>
+		<a href="#" class="btn btn-danger"><%= BT.DELETE %></a>
+	</div>
+</section>
+<%- include('../inc/foot.ejs') %> 
